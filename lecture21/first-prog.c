@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(void) {
-    int num;
+    int num = 42;
     printf("Enter a number: ");
     int rc = scanf("%d", &num);
     printf("rc = %d nums -> %d  %x  %X\n",

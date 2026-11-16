@@ -21,11 +21,16 @@ void recurse(int i) {
 }
 
 int main() {
+    int x = 4;
+    std::cout << "x is at " << &x << std::endl;
     std::cout << "calling foo from main" << std::endl;
     foo();
     std::cout << "calling foo again from main" << std::endl;
     foo();
     recurse(5);
+    std::cout << "calling foo again from main yet again" << std::endl;
+    foo();
+#if 0
 
     std::cout << "sclass::count++ = " << sclass::count++ << std::endl;
     inc_scount();
@@ -36,4 +41,5 @@ int main() {
     for (int i = 0; i < 10; i++) {
         std::cout << "list[" << i << "] = " << list[i] << std::endl;
     }
+#endif
 }
